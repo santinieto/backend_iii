@@ -1,0 +1,35 @@
+<div class="container mt-5">
+    <h1 class="mb-4">Verificación de Cuenta</h1>
+    <p>Ingresá el código que recibiste por correo electrónico para verificar tu
+        cuenta.</p>
+
+    <form id="verification-form">
+        <div class="mb-3">
+            <label for="verification-email" class="form-label">Correo
+                electronico</label>
+            <input
+                type="email"
+                name="verification-email"
+                id="verification-email"
+                class="form-control"
+                placeholder="Ej: example@gmail.com"
+                required
+            />
+
+            <label for="verification-code" class="form-label">Código de
+                Verificación</label>
+            <input
+                type="text"
+                name="verification-code"
+                id="verification-code"
+                class="form-control"
+                placeholder="Ej: 123456"
+                required
+            />
+        </div>
+
+        <button type="submit" class="btn btn-success">Verificar Cuenta</button>
+    </form>
+</div>
+
+<script src="/js/verify_account.js"></script>

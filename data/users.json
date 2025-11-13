@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "1c764f01ff2d8ef04508bad8",
+    "first_name": "admin",
+    "last_name": "admin",
+    "date": null,
+    "city": null,
+    "email": "admin.admin@gmail.com",
+    "password": "$2b$10$5dyw9.lKMch/mVbq7DXUeOgZ1TXbLZ/s9lIYMMjA0nTgNiVfta/7G",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/266/266033.png",
+    "role": "ADMIN",
+    "isVerified": true
+  },
+  {
+    "_id": "0e07eebd235bca0abf4d2e43",
+    "first_name": "admin",
+    "last_name": "admin",
+    "date": null,
+    "city": null,
+    "email": "admin2.admin@gmail.com",
+    "password": "$2b$10$3gdGxxhfwzPz0F0FeN8xRu9u7U90xWm97zgetVipfbjvKSQ.TloHu",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/266/266033.png",
+    "role": "ADMIN",
+    "isVerified": true
+  },
+  {
+    "_id": "0aff50480a8585ae5a0aac8a",
+    "first_name": "santiago",
+    "last_name": "nieto",
+    "date": null,
+    "city": null,
+    "email": "santi.nieto@gmail.com",
+    "password": "$2b$10$JHZf/sBliq.3Cw2EFSxRD.iQvuUGDVH4lRi1qndLvEZNnq82xrOfW",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/266/266033.png",
+    "role": "USER",
+    "isVerified": true
+  }
+]

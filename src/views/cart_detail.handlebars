@@ -1,0 +1,59 @@
+<div class="container mt-5">
+    <div class="card shadow mx-auto mb-4" style="max-width: 600px;">
+        <div class="card-header bg-success text-white text-center">
+            <h4>Resumen del Carrito</h4>
+        </div>
+
+        <div class="card-body">
+            <p><strong>ID del Carrito:</strong> {{cart._id}}</p>
+            <p><strong>Fecha de creación:</strong> {{cart.createdAt}}</p>
+            <p><strong>Usuario:</strong> {{cart.user}}</p>
+
+            <hr />
+            <h5>Productos:</h5>
+            <ul class="list-group mb-3">
+                {{#each cart.products}}
+                    <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                        <div>
+                            <div>
+                                <strong>{{this.name}} ({{this.id}})</strong> x {{this.quantity}}
+                            </div>
+
+                            {{#if this.discount}}
+                                <small class="text-muted">
+                                    ${{this.priceAtPurchase}} <s>${{this.price}}</s>
+                                    (-{{this.discount}}% de descuento)
+                                </small>
+                            {{else}}
+                                ${{this.priceAtPurchase}}
+                            {{/if}}
+                        </div>
+                        <span>${{this.subtotal}}</span>
+                    </li>
+                {{/each}}
+            </ul>
+
+            <div class="d-flex justify-content-between">
+                <strong>Total:</strong>
+                <strong>${{cart.total}}</strong>
+            </div>
+        </div>
+
+        <div class="card-footer text-center">
+            <small class="text-muted">Última actualización: {{cart.updatedAt}}</small>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="/products" class="btn btn-primary mx-2">Volver</a>
+        <button
+            id="confirm-cart"
+            class="btn btn-success mx-2"
+            data-cart-id="{{cart._id}}"
+        >
+            Confirmar compra
+        </button>
+    </div>
+</div>
+
+<script src="/js/cart_info.js"></script>

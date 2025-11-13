@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "cf99cb2c7b36a7c14487b816",
+    "name": "Parlante Bluetooth",
+    "price": 500000,
+    "discount": 5,
+    "category": "Tecnología",
+    "description": "Parlante inalámbrico con sonido envolvente",
+    "thumbnails": "speaker.png",
+    "stock": 20,
+    "code": "TEC-036",
+    "status": true
+  },
+  {
+    "_id": "d3271112f62078a43b91a496",
+    "name": "Parlante Bluetooth",
+    "price": 500000,
+    "discount": 5,
+    "category": "Tecnología",
+    "description": "Parlante inalámbrico con sonido envolvente",
+    "thumbnails": "speaker.png",
+    "stock": 20,
+    "code": "TEC-036",
+    "status": true
+  },
+  {
+    "_id": "3e12e49d3e684f58af1c6ef6",
+    "name": "Parlante Bluetooth",
+    "price": 500000,
+    "discount": 15,
+    "category": "Tecnología",
+    "description": "Parlante inalámbrico con sonido envolvente",
+    "thumbnails": "speaker.png",
+    "stock": 20,
+    "code": "TEC-037",
+    "status": true
+  },
+  {
+    "_id": "296ab84066aca54bc09f52e4",
+    "name": "Ojota",
+    "price": 20000,
+    "discount": 0,
+    "category": "Ropa",
+    "description": "Calzado de verano",
+    "thumbnails": "-",
+    "stock": 200,
+    "code": "ROP-001",
+    "status": true,
+    "createdAt": "2025-05-21T00:32:27.619Z",
+    "updatedAt": "2025-05-21T00:32:27.619Z"
+  }
+]

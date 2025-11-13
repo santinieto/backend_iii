@@ -1,0 +1,78 @@
+<div class="container py-5">
+    <h2 class="text-center mb-4">Listado de Carritos</h2>
+
+    {{#if carts.length}}
+        <!-- Menú desplegable -->
+        <div class="mb-4 text-center">
+            <label for="cartSelect" class="form-label fw-bold">Selecciona un
+                carrito:</label>
+            <select class="form-select w-50 mx-auto" id="cartSelect">
+                {{#each carts}}
+                    <option value="{{this._id}}">Carrito {{this._id}}</option>
+                {{/each}}
+            </select>
+        </div>
+
+        <!-- Carritos (uno visible a la vez) -->
+        {{#each carts}}
+            <div
+                class="card mx-auto shadow mb-4 cart-container"
+                id="cart-{{this._id}}"
+                style="max-width: 600px; display: none;"
+            >
+                <div class="card-header bg-success text-white text-center">
+                    <h4>Resumen del Carrito</h4>
+                </div>
+                <div class="card-body">
+                    <p><strong>ID del Carrito:</strong> {{this._id}}</p>
+                    <p><strong>Fecha de creación:</strong>
+                        {{this.createdAt}}</p>
+                    <p><strong>Usuario:</strong> {{this.user}}</p>
+
+                    <hr />
+                    <h5>Productos:</h5>
+                    <ul class="list-group mb-3">
+                        {{#each this.products}}
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+                            >
+                                <div>
+                                    <div><strong>{{this.name}}
+                                            ({{this.id}})</strong>
+                                        x
+                                        {{this.quantity}}</div>
+
+                                    {{#if this.discount}}
+                                        <small class="text-muted">
+                                            ${{this.priceAtPurchase}}
+                                            <s>${{this.price}}</s>
+                                            (-{{this.discount}}% de descuento)
+                                        </small>
+                                    {{else}}
+                                        ${{this.priceAtPurchase}}
+                                    {{/if}}
+                                </div>
+                                <span>${{this.subtotal}}</span>
+                            </li>
+                        {{/each}}
+                    </ul>
+
+                    <div class="d-flex justify-content-between">
+                        <strong>Total:</strong>
+                        <strong>${{this.total}}</strong>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <small class="text-muted">Última actualización:
+                        {{this.updatedAt}}</small>
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <div class="alert alert-warning text-center" role="alert">
+            No hay carritos disponibles.
+        </div>
+    {{/if}}
+</div>
+
+<script src="/js/carts.js"></script>

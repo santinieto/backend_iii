@@ -1,0 +1,974 @@
+[
+  {
+    "_id": "a3768815f616b53e5010a1c9",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 499.99,
+    "status": "confirmed",
+    "paymentMethod": "credit_card",
+    "shippingAddress": "123 Calle Falsa, Ciudad"
+  },
+  {
+    "_id": "775a2492181194896877f36a",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 9999,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {}
+  },
+  {
+    "_id": "c3c3cac9889be480caa6096f",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {}
+  },
+  {
+    "_id": "cfa30915140931022faf4984",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {}
+  },
+  {
+    "_id": "071c85e66647f29c68915476",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {}
+  },
+  {
+    "_id": "115b553f45e7a688d5ec1607",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {}
+  },
+  {
+    "_id": "c9c3a255d8ac2273a5c408b4",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": 1747703530921,
+    "updatedAt": 1747703530921
+  },
+  {
+    "_id": "3ac0834881cf2b9741650d4d",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:13:34.102Z",
+    "updatedAt": "2025-05-20T01:13:34.102Z"
+  },
+  {
+    "_id": "ace7e4d43cad616ead3388c4",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:15:57.706Z",
+    "updatedAt": "2025-05-20T01:15:57.706Z"
+  },
+  {
+    "_id": "4b5fcb0213b9a5eabfa24aea",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "priceAtPurchase": null,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "priceAtPurchase": null,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:22:56.592Z",
+    "updatedAt": "2025-05-20T01:22:56.592Z"
+  },
+  {
+    "_id": "e9a36cf56e9a3f21559994c0",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "priceAtPurchase": null,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "priceAtPurchase": null,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:23:19.487Z",
+    "updatedAt": "2025-05-20T01:23:19.487Z"
+  },
+  {
+    "_id": "0257bf9d08ed381c163336c2",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "priceAtPurchase": null,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "priceAtPurchase": null,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:24:46.856Z",
+    "updatedAt": "2025-05-20T01:24:46.856Z"
+  },
+  {
+    "_id": "9d7efdaa1b3bec7dcd037cd3",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:26:21.413Z",
+    "updatedAt": "2025-05-20T01:26:21.413Z"
+  },
+  {
+    "_id": "94d0d8999313befb51cad32c",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:26:56.160Z",
+    "updatedAt": "2025-05-20T01:26:56.160Z"
+  },
+  {
+    "_id": "44f6a665c6b968a5aa95930e",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:27:21.926Z",
+    "updatedAt": "2025-05-20T01:27:21.926Z"
+  },
+  {
+    "_id": "3cbca9e13c4b1b5bcb73cc5c",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:27:55.558Z",
+    "updatedAt": "2025-05-20T01:27:55.558Z"
+  },
+  {
+    "_id": "c3ac98f18127234c2ea0df60",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:28:59.568Z",
+    "updatedAt": "2025-05-20T01:28:59.568Z"
+  },
+  {
+    "_id": "1030381ef6e69348b46c17de",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:29:54.984Z",
+    "updatedAt": "2025-05-20T01:29:54.984Z"
+  },
+  {
+    "_id": "91a893092e3f1acd50c58e61",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:30:54.164Z",
+    "updatedAt": "2025-05-20T01:30:54.164Z"
+  },
+  {
+    "_id": "1deb69f6d1a9af6bbb16f6a4",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:31:21.688Z",
+    "updatedAt": "2025-05-20T01:31:21.688Z"
+  },
+  {
+    "_id": "82c5ecc5b3444b082746d81f",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:33:39.059Z",
+    "updatedAt": "2025-05-20T01:33:39.059Z"
+  },
+  {
+    "_id": "a9026f3b24dab9530f3de627",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 0,
+        "priceAtPurchase": 500000,
+        "discountAtPurchase": 0
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:34:48.364Z",
+    "updatedAt": "2025-05-20T01:34:48.364Z"
+  },
+  {
+    "_id": "0073ae0349efe8d1e0e7f783",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": null,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:36:29.902Z",
+    "updatedAt": "2025-05-20T01:36:29.902Z"
+  },
+  {
+    "_id": "9c72f9546f714cd58d48cade",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": null,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:36:46.179Z",
+    "updatedAt": "2025-05-20T01:36:46.179Z"
+  },
+  {
+    "_id": "27616f578610d92fab499477",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": null,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:37:07.412Z",
+    "updatedAt": "2025-05-20T01:37:07.412Z"
+  },
+  {
+    "_id": "edf861b794fc8fc7dd6a2df6",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": null,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:37:55.224Z",
+    "updatedAt": "2025-05-20T01:37:55.224Z"
+  },
+  {
+    "_id": "aeea375637c38ac43f6459ad",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": null,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:38:17.218Z",
+    "updatedAt": "2025-05-20T01:38:17.218Z"
+  },
+  {
+    "_id": "c7eebd853d132b2382aee1fc",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": null,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:38:37.355Z",
+    "updatedAt": "2025-05-20T01:38:37.355Z"
+  },
+  {
+    "_id": "df1987f33593aa741b6c7736",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": 1500000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:39:08.537Z",
+    "updatedAt": "2025-05-20T01:39:08.537Z"
+  },
+  {
+    "_id": "d977bc76e2c6778cafe62c3c",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": 900000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:40:26.899Z",
+    "updatedAt": "2025-05-20T01:40:26.899Z"
+  },
+  {
+    "_id": "0d65ec33c13abea19dc8ec85",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": 1375000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:48:36.735Z",
+    "updatedAt": "2025-05-20T01:48:36.735Z"
+  },
+  {
+    "_id": "c88ab8cd45cf5ff037387758",
+    "cart_id": "753b90d0f85e3de18fc9e1bc",
+    "products": [
+      {
+        "id": "d3271112f62078a43b91a496",
+        "name": "Parlante Bluetooth",
+        "quantity": 7,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      },
+      {
+        "id": "d3271112f62078a43b91a496",
+        "name": "Parlante Bluetooth",
+        "quantity": 7,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      },
+      {
+        "id": "d3271112f62078a43b91a496",
+        "name": "Parlante Bluetooth",
+        "quantity": 7,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": 2375000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:49:13.125Z",
+    "updatedAt": "2025-05-20T01:49:13.125Z"
+  },
+  {
+    "_id": "6e58d3eb0c8db0dfe5a36c49",
+    "cart_id": "a9dd0424d28ab6e75a51ffa8",
+    "products": [
+      {
+        "id": "3e12e49d3e684f58af1c6ef6",
+        "name": "Parlante Bluetooth",
+        "quantity": 2,
+        "price": 500000,
+        "discount": 15,
+        "priceAtPurchase": 425000,
+        "discountAtPurchase": 15
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      },
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": 1375000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-20T01:50:28.834Z",
+    "updatedAt": "2025-05-20T01:50:28.834Z"
+  },
+  {
+    "_id": "c376a09a10f6b889cddabc76",
+    "cart_id": "220cb16d691be14325de3a52",
+    "products": [
+      {
+        "id": "cf99cb2c7b36a7c14487b816",
+        "name": "Parlante Bluetooth",
+        "quantity": 1,
+        "price": 500000,
+        "discount": 5,
+        "priceAtPurchase": 475000,
+        "discountAtPurchase": 5
+      }
+    ],
+    "total": 475000,
+    "status": "confirmed",
+    "paymentMethod": "cash_on_delivery",
+    "shippingAddress": {},
+    "createdAt": "2025-05-21T00:31:39.869Z",
+    "updatedAt": "2025-05-21T00:31:39.869Z"
+  }
+]

@@ -1,0 +1,51 @@
+<div class="container py-5">
+    <div class="card mx-auto shadow" style="max-width: 600px;">
+        <div class="card-header bg-primary text-white text-center">
+            <h4>Recibo de Orden</h4>
+        </div>
+        <div class="card-body">
+            <p><strong>ID de Orden:</strong> {{order._id}}</p>
+            <p><strong>Fecha:</strong> {{order.createdAt}}</p>
+            <p><strong>Cliente:</strong> {{order.user}}</p>
+
+            <hr />
+            <h5>Productos:</h5>
+            <ul class="list-group mb-3">
+                {{#each order.products}}
+                    <li
+                        class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+                    >
+                        <div>
+                            <div><strong>{{this.name}} ({{this.id}})</strong>
+                                x
+                                {{this.quantity}}</div>
+
+                            {{#if this.discountAtPurchase}}
+                                <small class="text-muted">
+                                    ${{this.priceAtPurchase}}
+                                    <s>${{this.price}}</s>
+                                    (-{{this.discountAtPurchase}}% de descuento)
+                                </small>
+                            {{else}}
+                                ${{this.priceAtPurchase}}
+                            {{/if}}
+                        </div>
+
+                        <span>
+                            ${{this.subtotal}}
+
+                        </span>
+                    </li>
+                {{/each}}
+            </ul>
+
+            <div class="d-flex justify-content-between">
+                <strong>Total:</strong>
+                <strong>${{order.total}}</strong>
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            <small class="text-muted">Gracias por tu compra</small>
+        </div>
+    </div>
+</div>
