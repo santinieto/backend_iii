@@ -7,6 +7,8 @@ import cookieParser from "cookie-parser";
 import appRouter from "./routes/app.router.js";
 import errorHandler from "./middlewares/error_handler.js";
 import pathHandler from "./middlewares/path_handler.mid.js";
+import compression from "compression";
+import helmet from "helmet";
 
 // Variables globabes
 const PORT = process.env.PORT || 8080; // Puerto por defecto
@@ -14,7 +16,7 @@ const ENV = process.env.ENV || "prd"; // Ambiente por defecto
 
 // Creo el objeto Server
 const server = express();
-const ready = async () => {
+const ready = () => {
     // Inicializo el servidor
     console.log(
         `Servidor inicializado en el http://localhost:${PORT} - Ambiente ${ENV}`
@@ -26,6 +28,8 @@ server.use(express.json()); // Habilitar la lectura de cuerpos JSON
 server.use(morgan("dev")); // Logger para ver las peticiones en consola
 server.use(cookieParser(process.env.COOKIE_KEY)); // Middleware para leer cookies
 server.use(express.urlencoded({ extended: true })); // Middleware para leer datos de formularios
+server.use(compression());
+server.use(helmet());
 server.use(
     cors({
         origin: true, // Cuando tengamos la uril del front se cambiar el true por la URL

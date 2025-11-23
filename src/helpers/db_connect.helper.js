@@ -13,6 +13,7 @@ export class DatabaseConnect {
     }
 
     async connectToDatabase() {
+        console.log("URI de conexión:", process.env.MONGO_URI);
         try {
             await connect(this.url);
             console.log("Conectado a MongoDB");
