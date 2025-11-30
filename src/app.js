@@ -9,6 +9,7 @@ import errorHandler from "./middlewares/error_handler.js";
 import pathHandler from "./middlewares/path_handler.mid.js";
 import compression from "compression";
 import helmet from "helmet";
+import rateLimit from "express-rate-limit";
 
 // Variables globabes
 const PORT = process.env.PORT || 8080; // Puerto por defecto
@@ -30,9 +31,17 @@ server.use(cookieParser(process.env.COOKIE_KEY)); // Middleware para leer cookie
 server.use(express.urlencoded({ extended: true })); // Middleware para leer datos de formularios
 server.use(compression());
 server.use(helmet());
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutos
+    limit: 100, // Limite de 100 peticiones por IP
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+server.use(limiter);
+
 server.use(
     cors({
-        origin: true, // Cuando tengamos la uril del front se cambiar el true por la URL
+        origin: process.env.CORS_ORIGIN || true, // Usa variable de entorno o permite todo por defecto (dev)
         credentials: true, // Habilita el envio de Cookies
     })
 );

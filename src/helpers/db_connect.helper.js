@@ -13,9 +13,9 @@ export class DatabaseConnect {
     }
 
     async connectToDatabase() {
-        console.log("URI de conexión:", process.env.MONGO_URI);
+        console.log("Conectando a la base de datos...");
         try {
-            await connect(this.url);
+            await connect(this.url, { maxPoolSize: 10 });
             console.log("Conectado a MongoDB");
         } catch (error) {
             console.error("Error al conectar a MongoDB:", error);
