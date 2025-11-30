@@ -13,7 +13,7 @@ export const verifyAccount = async (req, res) => {
     const { email, verificationCode } = req.body;
     const user = await usersManager.readBy({ email, verificationCode });
     if (!user) {
-        res.json401("Error al verificar cuenta");
+        return res.json401("Error al verificar cuenta");
     }
     await usersManager.updateById(user._id, { isVerified: true });
     res.status(200).json({

@@ -8,7 +8,8 @@
     "start": "node ./src/app.js",
     "dev": "node --watch ./src/app.js --env dev",
     "tst": "node --watch ./src/app.js --env tst",
-    "prd": "node ./src/app.js --env prd"
+    "prd": "node ./src/app.js --env prd",
+    "test": "node --test"
   },
   "keywords": [],
   "author": "",
@@ -34,5 +35,8 @@
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
     "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "esmock": "^2.7.3"
   }
 }

@@ -4,6 +4,7 @@ import cartsRouter from "./api/carts.router.js";
 import productsRouter from "./api/products.router.js";
 import mailingRouter from "./api/mailing.router.js";
 import ordersRouter from "./api/orders.router.js";
+import forksRouter from "./api/forks.router.js";
 
 class ApiRouter extends CustomRouter {
     constructor() {
@@ -17,6 +18,7 @@ class ApiRouter extends CustomRouter {
         this.use("/products", productsRouter);
         this.use("/mailing", mailingRouter);
         this.use("/orders", ordersRouter);
+        this.use("/forks", forksRouter);
     };
 }
 
