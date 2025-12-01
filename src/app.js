@@ -34,7 +34,24 @@ server.use(log4js.connectLogger(getLogger("default"), { level: "auto" }));
 server.use(cookieParser(process.env.COOKIE_KEY)); // Middleware para leer cookies
 server.use(express.urlencoded({ extended: true })); // Middleware para leer datos de formularios
 server.use(compression());
-server.use(helmet());
+server.use(
+    helmet({
+        contentSecurityPolicy: {
+            useDefaults: true,
+            directives: {
+                // permitimos scripts desde nuestro dominio y desde jsDelivr
+                "script-src": ["'self'", "https://cdn.jsdelivr.net"],
+                // permitimos estilos (CSS) desde nuestro dominio y desde jsDelivr
+                "style-src": ["'self'", "https://cdn.jsdelivr.net"],
+                // fuentes si las trae el CDN
+                "font-src": ["'self'", "https://cdn.jsdelivr.net"],
+                // imágenes locales + data URIs
+                "img-src": ["'self'", "data:"],
+                // ajustá o agregá directives según necesites
+            },
+        },
+    })
+);
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutos
     limit: 100, // Limite de 100 peticiones por IP
