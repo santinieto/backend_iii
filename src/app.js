@@ -3,6 +3,8 @@ import { engine } from "express-handlebars";
 import "./helpers/set_env.helper.js";
 import cors from "cors";
 import morgan from "morgan";
+import log4js from "log4js";
+import logger, { getLogger } from "./helpers/logger.helper.js";
 import cookieParser from "cookie-parser";
 import appRouter from "./routes/app.router.js";
 import errorHandler from "./middlewares/error_handler.js";
@@ -19,7 +21,7 @@ const ENV = process.env.ENV || "prd"; // Ambiente por defecto
 const server = express();
 const ready = () => {
     // Inicializo el servidor
-    console.log(
+    logger.info(
         `Servidor inicializado en el http://localhost:${PORT} - Ambiente ${ENV}`
     );
 };
@@ -27,6 +29,8 @@ const ready = () => {
 // Configuraciones del servidor
 server.use(express.json()); // Habilitar la lectura de cuerpos JSON
 server.use(morgan("dev")); // Logger para ver las peticiones en consola
+// Integración de log4js para logging de requests
+server.use(log4js.connectLogger(getLogger("default"), { level: "auto" }));
 server.use(cookieParser(process.env.COOKIE_KEY)); // Middleware para leer cookies
 server.use(express.urlencoded({ extended: true })); // Middleware para leer datos de formularios
 server.use(compression());

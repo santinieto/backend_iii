@@ -30,6 +30,7 @@
     "express-session": "^1.18.1",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
+    "log4js": "^6.9.1",
     "mongoose": "^8.13.1",
     "mongoose-paginate-v2": "^1.9.0",
     "morgan": "^1.10.0",

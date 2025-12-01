@@ -1,4 +1,7 @@
 import { DatabaseConnect } from "../helpers/db_connect.helper.js";
+import { getLogger } from "../helpers/logger.helper.js";
+
+const logger = getLogger("dao.factory");
 
 const { PERSISTENCE } = process.env;
 
@@ -29,7 +32,7 @@ switch (PERSISTENCE) {
     case "MEMORY":
         break;
     case "FS":
-        console.log("Conectado a la base de datos local");
+        logger.info("Conectado a la base de datos local");
 
         {
             const { usersManager } = await import("./fs/users.fs.js");

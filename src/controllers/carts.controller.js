@@ -1,6 +1,11 @@
 import { cartService } from "../services/carts.service.js";
+import { getLogger } from "../helpers/logger.helper.js";
+
+const logger = getLogger("carts");
 
 export const createOne = async (req, res) => {
+    logger.debug("Entrando en el controlador de creación de carrito");
+
     const { products } = req.body;
 
     if (!Array.isArray(products)) {
@@ -16,6 +21,8 @@ export const createOne = async (req, res) => {
 };
 
 export const readAll = async (req, res) => {
+    logger.debug("Entrando en el controlador de lectura de todos los carritos");
+
     const carts = await cartService.readAll();
     if (!carts || carts.length === 0) {
         return res.json404("No se encontraron carritos.");
@@ -24,6 +31,8 @@ export const readAll = async (req, res) => {
 };
 
 export const readOne = async (req, res) => {
+    logger.debug("Entrando en el controlador de lectura de un carrito");
+
     const { cid } = req.params;
     const cart = await cartService.readOne(cid);
 
@@ -35,6 +44,8 @@ export const readOne = async (req, res) => {
 };
 
 export const addProductToCart = async (req, res) => {
+    logger.debug("Entrando en el controlador de agregar producto al carrito");
+
     const { cart_id, product_id, quantity } = req.body;
     const result = await cartService.addProductToCart(
         cart_id,
@@ -50,6 +61,8 @@ export const addProductToCart = async (req, res) => {
 };
 
 export const updateOne = async (req, res) => {
+    logger.debug("Entrando en el controlador de actualización de carrito");
+
     const { cid } = req.params;
     const { products } = req.body;
 
@@ -62,6 +75,8 @@ export const updateOne = async (req, res) => {
 };
 
 export const deleteOne = async (req, res) => {
+    logger.debug("Entrando en el controlador de eliminación de carrito");
+
     const { cid } = req.params;
     const deleted = await cartService.deleteOne(cid);
     if (!deleted) {

@@ -1,4 +1,7 @@
 import { connect } from "mongoose";
+import { getLogger } from "./logger.helper.js";
+
+const logger = getLogger("db");
 
 export class DatabaseConnect {
     static instance;
@@ -13,12 +16,12 @@ export class DatabaseConnect {
     }
 
     async connectToDatabase() {
-        console.log("Conectando a la base de datos...");
+        logger.info("Conectando a la base de datos...");
         try {
             await connect(this.url, { maxPoolSize: 10 });
-            console.log("Conectado a MongoDB");
+            logger.info("Conectado a MongoDB");
         } catch (error) {
-            console.error("Error al conectar a MongoDB:", error);
+            logger.error("Error al conectar a MongoDB:", error);
         }
     }
 }

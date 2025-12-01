@@ -1,5 +1,9 @@
+import { getLogger } from "../helpers/logger.helper.js";
+
+const logger = getLogger("error");
+
 const errorHandler = (error, req, res, next) => {
-    console.error("🔴 Error capturado:", error); // <-- Agregá esto
+    logger.error("🔴 Error capturado:", error);
 
     const message = error.message || "Internal server error";
 

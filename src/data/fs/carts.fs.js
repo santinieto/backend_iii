@@ -1,4 +1,7 @@
 import FileSystemManager from "./manager.fs.js";
+import { getLogger } from "../../helpers/logger.helper.js";
+
+const logger = getLogger("data.fs.carts");
 import { productsManager } from "./products.fs.js";
 
 const cartsFilePath = "./data/carts.json";
@@ -42,7 +45,7 @@ class CartsManager extends FileSystemManager {
         const updatedCart = await this.updateById(cart_id, {
             products: productsTotal,
         });
-        console.log(updatedCart);
+        logger.debug("updatedCart:", updatedCart);
 
         return {
             status: "success",

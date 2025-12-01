@@ -2,12 +2,15 @@ import { cartsManager } from "../data/dao.factory.js";
 import { productsManager } from "../data/dao.factory.js";
 import { ordersManager } from "../data/dao.factory.js";
 import { cartService } from "../services/carts.service.js";
+import { getLogger } from "../helpers/logger.helper.js";
+
+const logger = getLogger("views");
 
 export const home = async (req, res) => {
     try {
         res.render("home");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -16,7 +19,7 @@ export const register = async (req, res) => {
     try {
         res.render("register");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -25,7 +28,7 @@ export const verifyAccount = async (req, res) => {
     try {
         res.render("verify_account");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -34,7 +37,7 @@ export const login = async (req, res) => {
     try {
         res.render("login");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -43,7 +46,7 @@ export const logout = async (req, res) => {
     try {
         res.render("logout");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -52,7 +55,7 @@ export const profile = async (req, res) => {
     try {
         res.render("profile");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -61,7 +64,7 @@ export const controlPanel = async (req, res) => {
     try {
         res.render("control_panel");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -87,7 +90,7 @@ export const allProducts = async (req, res) => {
 
         res.render("products", { products, cartIds });
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -96,7 +99,7 @@ export const addProduct = async (req, res) => {
     try {
         res.render("add_product");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -105,7 +108,7 @@ export const updateProduct = async (req, res) => {
     try {
         res.render("update_product");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -122,7 +125,7 @@ export const allCarts = async (req, res) => {
 
         res.render("carts", { carts });
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error", {
             message: "Error al obtener los carritos.",
         });
@@ -133,7 +136,7 @@ export const deleteProduct = async (req, res) => {
     try {
         res.render("delete_product");
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -150,7 +153,7 @@ export const productInfo = async (req, res) => {
 
         res.render("product_detail", { product });
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -165,7 +168,7 @@ export const cartInfo = async (req, res) => {
 
         res.render("cart_detail", { cart });
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };
@@ -173,7 +176,7 @@ export const cartInfo = async (req, res) => {
 export const orderInfo = async (req, res) => {
     try {
         const order = await ordersManager.readById(req.params.oid);
-        console.log(order);
+        logger.debug(order);
 
         if (!order) {
             res.status(404).render("error");
@@ -181,7 +184,7 @@ export const orderInfo = async (req, res) => {
 
         res.render("order_detail", { order });
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         res.status(500).render("error");
     }
 };

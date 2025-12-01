@@ -1,4 +1,7 @@
 import { verifyToken } from "../helpers/token.helper.js";
+import { getLogger } from "../helpers/logger.helper.js";
+
+const logger = getLogger("policies");
 
 const setupPolicies = (policies) => async (req, res, next) => {
     try {
@@ -8,7 +11,7 @@ const setupPolicies = (policies) => async (req, res, next) => {
         }
 
         if (!Array.isArray(policies)) {
-            console.log("Policies no es un array", policies);
+            logger.warn("Policies no es un array", policies);
             return res.json400("Policies must me an array");
         }
 

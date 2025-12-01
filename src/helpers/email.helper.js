@@ -1,4 +1,7 @@
 import { createTransport } from "nodemailer";
+import { getLogger } from "./logger.helper.js";
+
+const logger = getLogger("email");
 
 const transport = createTransport({
     host: "smtp.gmail.com", // Vamos a usar el servicio de Gmail
@@ -19,7 +22,7 @@ export const sendEmail = async (data) => {
             html: data.body || "test body",
         });
     } catch (error) {
-        console.log("Ocurrio un error al enviar el correo:", error);
+        logger.error("Ocurrio un error al enviar el correo:", error);
     }
 };
 
