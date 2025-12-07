@@ -16,6 +16,7 @@ class UserDTO {
         this.city = data.city || null;
         this.email = data.email;
         this.password = data.password;
+        this.pets = data.pets || [];
         this.avatar =
             data.avatar ||
             "https://cdn-icons-png.flaticon.com/512/266/266033.png";
