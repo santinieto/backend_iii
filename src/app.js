@@ -14,10 +14,15 @@ import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 import cluster from "cluster";
 import { cpus } from "os";
+import swaggerUI from "swagger-ui-express";
+import swaggerJSDoc from "swagger-jsdoc";
+import { info } from "./docs/info.js";
 
 // Variables globabes
 const PORT = process.env.PORT || 8080; // Puerto por defecto
 const ENV = process.env.ENV || "prd"; // Ambiente por defecto
+
+const specs = swaggerJSDoc(info);
 
 // Creo el objeto Server
 const server = express();
@@ -96,6 +101,7 @@ if (cluster.isPrimary) {
 } else {
     // Endpoints
     server.use("/", appRouter);
+    server.use("/api/docs", swaggerUI.serve, swaggerUI.setup(specs));
     server.use(errorHandler);
     server.use(pathHandler);
 

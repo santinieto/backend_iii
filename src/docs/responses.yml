@@ -1,0 +1,161 @@
+components:
+    schemas:
+        # ===== PRODUCT RESPONSES =====
+        ProductResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    description: Código de estado de la respuesta
+                    example: 201
+                data:
+                    $ref: '#/components/schemas/Product'
+
+        ProductListResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 200
+                data:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/Product'
+
+        # ===== USER RESPONSES =====
+        UserResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 200
+                data:
+                    $ref: '#/components/schemas/User'
+
+        # ===== CART RESPONSES =====
+        CartResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 200
+                data:
+                    $ref: '#/components/schemas/Cart'
+
+        CartListResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 200
+                data:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/Cart'
+
+        # ===== ORDER RESPONSES =====
+        OrderResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 201
+                data:
+                    $ref: '#/components/schemas/Order'
+
+        OrderListResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 200
+                data:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/Order'
+
+        # ===== AUTH RESPONSES =====
+        LoginResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 200
+                message:
+                    type: string
+                    example: "Login exitoso"
+                data:
+                    type: object
+                    properties:
+                        user:
+                            $ref: '#/components/schemas/User'
+                        token:
+                            type: string
+                            example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+
+        RegisterResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 201
+                message:
+                    type: string
+                    example: "Usuario registrado exitosamente"
+                data:
+                    $ref: '#/components/schemas/User'
+
+        # ===== ERROR RESPONSES =====
+        ErrorResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    description: Código de estado de la respuesta
+                    example: 500
+                message:
+                    type: string
+                    description: Mensaje de error
+                    example: "Internal Server Error"
+
+        NotFoundResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    description: Código de estado de la respuesta
+                    example: 404
+                message:
+                    type: string
+                    example: "Recurso no encontrado"
+
+        BadRequestResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    description: Código de estado de la respuesta
+                    example: 400
+                message:
+                    type: string
+                    example: "Solicitud incorrecta"
+
+        UnauthorizedResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 401
+                message:
+                    type: string
+                    example: "No autorizado"
+
+        ForbiddenResponse:
+            type: object
+            properties:
+                status:
+                    type: number
+                    example: 403
+                message:
+                    type: string
+                    example: "Acceso prohibido"
