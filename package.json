@@ -1,48 +1,48 @@
 {
-  "name": "app_structure",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "type": "module",
-  "scripts": {
-    "start": "node ./src/app.js",
-    "dev": "node --watch ./src/app.js --env dev",
-    "tst": "node --watch ./src/app.js --env tst",
-    "prd": "node ./src/app.js --env prd",
-    "test": "node --test"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "engines": {
-    "node": "20.12.2"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^10.1.0",
-    "bcrypt": "^5.1.1",
-    "commander": "^13.1.0",
-    "compression": "^1.8.1",
-    "cookie-parser": "^1.4.7",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "express-handlebars": "^8.0.1",
-    "express-rate-limit": "^8.2.1",
-    "express-session": "^1.18.1",
-    "faker": "^6.6.6",
-    "helmet": "^8.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "log4js": "^6.9.1",
-    "mongoose": "^8.13.1",
-    "mongoose-paginate-v2": "^1.9.0",
-    "morgan": "^1.10.0",
-    "nodemailer": "^7.0.3",
-    "passport": "^0.7.0",
-    "passport-jwt": "^4.0.1",
-    "passport-local": "^1.0.0",
-    "uuid": "^11.1.0"
-  },
-  "devDependencies": {
-    "esmock": "^2.7.3"
-  }
+    "name": "app_structure",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+        "start": "node --watch ./src/app.js --env prd",
+        "dev": "node --watch ./src/app.js --env dev",
+        "tst": "node --watch ./src/app.js --env tst",
+        "prd": "node ./src/app.js --env prd",
+        "test": "node --test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "engines": {
+        "node": "20.12.2"
+    },
+    "dependencies": {
+        "@faker-js/faker": "^10.1.0",
+        "bcrypt": "^5.1.1",
+        "commander": "^13.1.0",
+        "compression": "^1.8.1",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "express-handlebars": "^8.0.1",
+        "express-rate-limit": "^8.2.1",
+        "express-session": "^1.18.1",
+        "faker": "^6.6.6",
+        "helmet": "^8.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "log4js": "^6.9.1",
+        "mongoose": "^8.13.1",
+        "mongoose-paginate-v2": "^1.9.0",
+        "morgan": "^1.10.0",
+        "nodemailer": "^7.0.3",
+        "passport": "^0.7.0",
+        "passport-jwt": "^4.0.1",
+        "passport-local": "^1.0.0",
+        "uuid": "^11.1.0"
+    },
+    "devDependencies": {
+        "esmock": "^2.7.3"
+    }
 }
