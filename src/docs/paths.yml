@@ -113,6 +113,205 @@ paths:
                             schema:
                                 $ref: "#/components/schemas/UnauthorizedResponse"
 
+    /api/auth/verify-account:
+        post:
+            tags:
+                - Authentication
+            summary: Verificar cuenta de usuario con código
+            requestBody:
+                content:
+                    application/json:
+                        schema:
+                            type: object
+                            properties:
+                                email:
+                                    type: string
+                                    format: email
+                                    example: "usuario@ejemplo.com"
+                                verificationCode:
+                                    type: string
+                                    example: "ABC123"
+                            required:
+                                - email
+                                - verificationCode
+                required: true
+            responses:
+                200:
+                    description: Cuenta verificada exitosamente
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    response:
+                                        type: string
+                                        example: "Usuario 64f2a1e4b9c1a23d45678901 verificado correctamente"
+                                    method:
+                                        type: string
+                                        example: "POST"
+                                    url:
+                                        type: string
+                                        example: "/api/auth/verify-account"
+                                    status:
+                                        type: string
+                                        example: "success"
+                401:
+                    description: Error al verificar cuenta
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/UnauthorizedResponse"
+
+    /api/auth/control-panel:
+        get:
+            tags:
+                - Authentication
+            summary: Obtener datos del panel de control (solo admin)
+            security:
+                - bearerAuth: []
+            responses:
+                200:
+                    description: Datos del usuario administrador
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    response:
+                                        $ref: "#/components/schemas/User"
+                                    method:
+                                        type: string
+                                        example: "GET"
+                                    url:
+                                        type: string
+                                        example: "/api/auth/control-panel"
+                                    status:
+                                        type: string
+                                        example: "success"
+                401:
+                    description: No autorizado
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/UnauthorizedResponse"
+                403:
+                    description: Acceso prohibido (requiere rol admin)
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/ForbiddenResponse"
+
+    /api/auth/navbar:
+        get:
+            tags:
+                - Authentication
+            summary: Obtener datos del usuario para barra de navegación
+            security:
+                - bearerAuth: []
+            responses:
+                200:
+                    description: Datos del usuario para navegación
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    response:
+                                        $ref: "#/components/schemas/User"
+                                    method:
+                                        type: string
+                                        example: "GET"
+                                    url:
+                                        type: string
+                                        example: "/api/auth/navbar"
+                                    status:
+                                        type: string
+                                        example: "success"
+                401:
+                    description: No autorizado
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/UnauthorizedResponse"
+
+    /api/auth/delete-product:
+        get:
+            tags:
+                - Authentication
+            summary: Obtener datos del usuario para eliminar producto (admin)
+            security:
+                - bearerAuth: []
+            responses:
+                200:
+                    description: Datos del usuario administrador
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    response:
+                                        $ref: "#/components/schemas/User"
+                                    method:
+                                        type: string
+                                        example: "GET"
+                                    url:
+                                        type: string
+                                        example: "/api/auth/delete-product"
+                                    status:
+                                        type: string
+                                        example: "success"
+                401:
+                    description: No autorizado
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/UnauthorizedResponse"
+                403:
+                    description: Acceso prohibido (requiere rol admin)
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/ForbiddenResponse"
+
+    /api/auth/update-product:
+        get:
+            tags:
+                - Authentication
+            summary: Obtener datos del usuario para actualizar producto (admin)
+            security:
+                - bearerAuth: []
+            responses:
+                200:
+                    description: Datos del usuario administrador
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    response:
+                                        $ref: "#/components/schemas/User"
+                                    method:
+                                        type: string
+                                        example: "GET"
+                                    url:
+                                        type: string
+                                        example: "/api/auth/update-product"
+                                    status:
+                                        type: string
+                                        example: "success"
+                401:
+                    description: No autorizado
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/UnauthorizedResponse"
+                403:
+                    description: Acceso prohibido (requiere rol admin)
+                    content:
+                        application/json:
+                            schema:
+                                $ref: "#/components/schemas/ForbiddenResponse"
+
     # ===== PRODUCTS ENDPOINTS =====
     /api/products:
         post:
