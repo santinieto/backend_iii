@@ -12,6 +12,8 @@ import pathHandler from "./middlewares/path_handler.mid.js";
 import compression from "compression";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
+import cluster from "cluster";
+import { cpus } from "os";
 
 // Variables globabes
 const PORT = process.env.PORT || 8080; // Puerto por defecto
@@ -22,7 +24,7 @@ const server = express();
 const ready = () => {
     // Inicializo el servidor
     logger.info(
-        `Servidor inicializado en el http://localhost:${PORT} - Ambiente ${ENV}`
+        `Servidor inicializado en el http://localhost:${PORT} - Ambiente ${ENV} - PID worker ${process.pid}`
     );
 };
 
@@ -75,10 +77,28 @@ server.engine("handlebars", engine()); // Como va a ser la extension de los arch
 server.set("view engine", "handlebars"); // Seteo
 server.set("views", "./src/views"); // Donde tiene que buscar las vistas
 
-// Endpoints
-server.use("/", appRouter);
-server.use(errorHandler);
-server.use(pathHandler);
+// Cluster mode
+if (cluster.isPrimary) {
+    console.log(`Master ${process.pid} is running`);
 
-// Inicializo el servidor
-server.listen(PORT, ready);
+    // Fork workers.
+    const numCPUs = process.env.NUM_CPUS || cpus().length;
+    for (let i = 0; i < numCPUs; i++) {
+        cluster.fork();
+    }
+
+    cluster.on("exit", (worker, code, signal) => {
+        console.log(
+            `worker ${worker.process.pid} died with code: ${code}, and signal: ${signal}`
+        );
+        cluster.fork(); // Reinicio el worker
+    });
+} else {
+    // Endpoints
+    server.use("/", appRouter);
+    server.use(errorHandler);
+    server.use(pathHandler);
+
+    // Inicializo el servidor
+    server.listen(PORT, ready);
+}
