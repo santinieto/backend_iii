@@ -9,7 +9,11 @@
         "dev": "node --watch ./src/app.js --env dev",
         "tst": "node --watch ./src/app.js --env tst",
         "prd": "node ./src/app.js --env prd",
-        "test": "node --test"
+        "test": "node --test",
+        "test:services": "node --test test/services/",
+        "test:service:carts": "node --test test/services/carts.service.test.js",
+        "test:service:products": "node --test test/services/products.service.test.js",
+        "test:service:orders": "node --test test/services/orders.service.test.js"
     },
     "keywords": [],
     "author": "",
@@ -45,6 +49,8 @@
         "uuid": "^11.1.0"
     },
     "devDependencies": {
-        "esmock": "^2.7.3"
+        "chai": "^6.2.1",
+        "esmock": "^2.7.3",
+        "sinon": "^21.0.1"
     }
 }
